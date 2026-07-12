@@ -1,0 +1,11 @@
+Done — 3 US Graphics–inspired design candidates for "ORX / Open Robotics Exchange" are built and pushed to main, and a server is running on port 8080 (open the forwarded port and start at /index.html, which links to all three).
+
+Each design has 3 pages: a scrolling social-style feed (index.html), a forum page (forum.html), and a post detail page (post.html). They're static and style-only, as requested.
+
+DESIGN 1 — TELEMETRY (/design-1): dark terminal console. Amber + phosphor green on near-black, monospace, live system state in every header (nodes, uplink, uptime), box-drawing ASCII diagrams, dashed borders, blinking cursor. "Expose state and inner workings" taken literally.
+
+DESIGN 2 — DATASHEET (/design-2): a printed engineering document. Paper-white with drafting red, every page has a title block (sheet no., rev, date, status stamps), numbered sections (SEC 1.0, 4.1...), revision tables, "GENERAL NOTES", stamps like TESTED/RELEASED. The forum is a "deliberation record", replies are numbered exhibits.
+
+DESIGN 3 — PANEL (/design-3): flat instrument panel. Slate-gray panel grid, signal cyan + orange accents, dense stat strips in the header, vote gauges, load meters, public mod log and verification queue as first-class panels. "Dense, not sparse; flat, not hierarchical."
+
+All three follow the philosophy txt: dense, verbose, explicit metadata everywhere (checksums, rev numbers, reproduction counts), regressions disclosed in spec tables, public moderation logs, no minimalism, timeless mono aesthetics — while looking nothing like GitHub or MakerWorld.

@@ -1,0 +1,46 @@
+/* DESIGN 3 — "PANEL" : flat instrument-panel grid, slate + signal cyan/orange */
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#23272b;color:#cfd6db;font:13px/1.5 "Berkeley Mono","IBM Plex Mono",ui-monospace,monospace}
+a{color:#4fd8eb;text-decoration:none}
+a:hover{text-decoration:underline}
+header{display:flex;justify-content:space-between;align-items:stretch;background:#1a1d20;border-bottom:3px solid #4fd8eb;flex-wrap:wrap}
+.logo{padding:10px 16px;font-size:17px;font-weight:bold;color:#fff;letter-spacing:1px}
+.logo i{font-style:normal;color:#ff8a00}
+header .stat{display:flex;font-size:11px}
+header .stat div{padding:6px 14px;border-left:1px solid #383e44}
+header .stat small{display:block;color:#8b959e;letter-spacing:1px}
+nav{display:flex;background:#2b3036;border-bottom:1px solid #14161a;flex-wrap:wrap}
+nav a{padding:8px 20px;color:#cfd6db;letter-spacing:2px;font-size:12px;border-right:1px solid #14161a}
+nav a.on{background:#4fd8eb;color:#14161a;font-weight:bold}
+.grid{max-width:1240px;margin:14px auto;padding:0 14px;display:grid;grid-template-columns:210px 1fr 270px;gap:12px}
+.grid.wide{grid-template-columns:210px 1fr}
+.panel{background:#2b3036;border:1px solid #14161a;margin-bottom:12px}
+.panel>h3{background:#1a1d20;color:#fff;font-size:11px;letter-spacing:2px;padding:6px 10px;display:flex;justify-content:space-between}
+.panel>h3 em{font-style:normal;color:#ff8a00}
+.panel .pd{padding:10px}
+.plist{list-style:none;font-size:12px}
+.plist li{border-bottom:1px solid #383e44;padding:5px 10px;display:flex;justify-content:space-between;gap:8px}
+.plist li:last-child{border-bottom:0}
+.plist .n{color:#8b959e}
+.post{background:#2b3036;border:1px solid #14161a;margin-bottom:12px;display:grid;grid-template-columns:64px 1fr}
+.vote{background:#1a1d20;text-align:center;padding:10px 4px;font-size:12px;border-right:1px solid #14161a}
+.vote b{display:block;color:#ff8a00;font-size:15px}
+.post .body{padding:10px 14px}
+.post h2{font-size:15px;color:#fff;margin-bottom:4px}
+.post h2 a{color:#fff}
+.post .meta{font-size:11px;color:#8b959e;margin-bottom:6px}
+.post .meta b{color:#4fd8eb;font-weight:normal}
+.post p{font-size:12.5px}
+.chips{margin-top:8px}
+.chip{display:inline-block;background:#1a1d20;border:1px solid #383e44;padding:1px 8px;font-size:10.5px;color:#8b959e;margin-right:4px;letter-spacing:1px}
+.chip.hot{border-color:#ff8a00;color:#ff8a00}
+.actions{border-top:1px solid #383e44;margin-top:8px;padding-top:6px;font-size:11px;color:#8b959e;display:flex;gap:16px;flex-wrap:wrap}
+table{width:100%;border-collapse:collapse;font-size:12px}
+td,th{border-bottom:1px solid #383e44;padding:5px 8px;text-align:left}
+th{color:#8b959e;font-size:10.5px;letter-spacing:1.5px;background:#1a1d20}
+.bar{height:8px;background:#1a1d20;margin:3px 0}
+.bar i{display:block;height:100%;background:#4fd8eb}
+.bar.o i{background:#ff8a00}
+.big{font-size:20px;color:#fff}
+footer{border-top:1px solid #383e44;margin-top:8px;padding:8px 16px;font-size:11px;color:#8b959e;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media(max-width:1000px){.grid,.grid.wide{grid-template-columns:1fr}}

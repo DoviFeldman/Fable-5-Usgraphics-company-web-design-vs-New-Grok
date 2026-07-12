@@ -1,0 +1,71 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OPEN ROBOTICS EXCHANGE — SHT.3 POST 88-4102</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="sheet">
+<div class="titleblock">
+<div><small>TITLE</small><strong>CYCLOIDAL DRIVE, QUASI-DIRECT, REV.3</strong><small>ENTRY NO. 88-4102</small></div>
+<div><small>SHEET</small><strong>3 OF 3</strong><small>POST DETAIL</small></div>
+<div><small>DRAWN BY</small><strong>SERVO_WITCH</strong><small>CERT. CONTRIBUTOR</small></div>
+<div><small>DISPOSITION</small><strong class="red">RELEASED</strong><small>LICENSE: GPL-3.0</small></div>
+</div>
+<nav><a href="index.html">FEED</a><a href="forum.html">FORUM</a><a class="on" href="post.html">POSTS</a><a href="#">PARTS INDEX</a><a href="#">DRAWINGS</a><a href="#">STANDARDS</a></nav>
+<main>
+<div class="col">
+<h1>SPECIFICATION <span class="sec">SEC. 5.0</span></h1>
+<p style="margin-bottom:10px;font-size:12.5px">Revision three of the quasi-direct-drive actuator. All changes from rev.2 are listed exhaustively, including the two that made performance worse. Concealment of regressions is grounds for de-certification under ORX-STD-7.</p>
+<div class="figure">FIG 5.1 — DRIVE SCHEMATIC, NOT TO SCALE
+
+        ┌────────────────┐
+ MOTOR ─┤ CYCLOID 17:1   ├─ OUTPUT ─── 38.2 Nm PEAK
+        └───────┬────────┘
+                │
+        ENCODER, 14-BIT, OUTPUT SHAFT
+<span class="cap">SOURCE: /cad/assembly_rev3.FCStd</span></div>
+<table>
+<tr><th>PARAMETER</th><th>REV.2</th><th>REV.3</th><th>Δ</th></tr>
+<tr><td>PEAK TORQUE</td><td>37.9 Nm</td><td>38.2 Nm</td><td>+0.8%</td></tr>
+<tr><td>BACKLASH</td><td>0.068°</td><td>0.04°</td><td class="red">−41%</td></tr>
+<tr><td>EFFICIENCY AT RATED LOAD</td><td>85.3%</td><td>84.1%</td><td>−1.2 pt (REGRESSION, ACCEPTED)</td></tr>
+<tr><td>MASS</td><td>398 g</td><td>412 g</td><td>+14 g (REGRESSION, ACCEPTED)</td></tr>
+<tr><td>UNIT COST, QTY 1</td><td>$58.90</td><td>$61.20</td><td>+$2.30</td></tr>
+<tr><td>ENDURANCE, CYCLES</td><td>1.4 M</td><td>2.1 M</td><td>+50%</td></tr>
+</table>
+<p class="cap" style="margin:6px 0 16px">RAW TEST DATA: /data/rig_full.csv (2.1M ROWS). REPOSITORY: orx.dev/servo_witch/qdd-v3</p>
+
+<h1>DELIBERATION — 61 REPLIES <span class="sec">SEC. 6.0</span></h1>
+<div class="item"><span class="num">6.1</span>
+<div class="meta">BLDC_BORIS · REP 11,204 · 9 MIN AGO</div>
+<p>Dowel pin substitution is clever. Did you measure the efficiency delta? Hardened pins usually cost 1–2 points to friction.</p>
+<div class="row"><span>▲ 88</span><span>REPLY</span><span>QUOTE</span></div></div>
+<div class="item" style="margin-left:26px"><span class="num">6.2</span>
+<div class="meta">SERVO_WITCH · ORIGINATOR · 6 MIN AGO · IN RE 6.1</div>
+<p>Measured: 84.1% vs 85.3% at rated load. Accepted regression — the backlash improvement governs. Full sweep at /data/eff_sweep.csv.</p>
+<div class="row"><span>▲ 61</span><span>REPLY</span><span>QUOTE</span></div></div>
+<div class="item"><span class="num">6.3</span>
+<div class="meta">WOBBLY_DOG · REP 302 · 2 MIN AGO</div>
+<p>Printing the carrier now in PETG-CF (you tested PA-CF only). Will file cycle counts to the shared test matrix.</p>
+<div class="row"><span>▲ 12</span><span>REPLY</span><span>QUOTE</span></div></div>
+</div>
+
+<aside>
+<h1>DOCUMENT CONTROL <span class="sec">SEC. 7.0</span></h1>
+<table>
+<tr><th colspan="2">TELEMETRY</th></tr>
+<tr><td>VIEWS</td><td>12,882</td></tr>
+<tr><td>APPROVALS</td><td>▲ 482</td></tr>
+<tr><td>FORKS</td><td>19</td></tr>
+<tr><td>REPRODUCTIONS</td><td>204</td></tr>
+<tr><td>CI STATUS</td><td>PASS</td></tr>
+</table>
+<h1 style="margin-top:16px">REVISIONS <span class="sec">SEC. 7.1</span></h1>
+<table>
+<tr><th>REV</th><th>DATE</th><th>NOTE</th></tr>
+<tr><td>3</td><td>2026-07-12</td><td>DOWEL RING</td></tr>
+<tr><td>2</td><td>2026-03-01</td><td>CF CARRIER</td></tr>
+<tr><td>1</td><td>2025-11-18</td><td>INITIAL</td></tr>
+</table>
+<p class="cap" style="margin-top:10px">DOWNLOAD PACKAGE: 48.2 MB ZIP — STEP, FCStd, FIRMWARE, RAW CSV.</p>
+</aside>
+</main>
+<footer><span>ORX FORM 100-C · EVERY EDIT VERSIONED, EVERY VOTE AUDITABLE</span><span>SHEET 3 OF 3 — END OF DOCUMENT</span></footer>
+</div>
+</body></html>

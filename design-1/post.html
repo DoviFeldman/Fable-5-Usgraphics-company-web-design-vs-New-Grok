@@ -1,0 +1,48 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ORX//TELEMETRY — POST 4F2A</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="bar"><span><b>ORX</b> › /actuators › POST ID:4F2A</span><span>REVISION 3 · CHECKSUM a91f…04 · UTC 18:43:02 <span class="blink">▊</span></span></div>
+<nav><a href="index.html">FEED</a><a href="forum.html">FORUM</a><a class="on" href="post.html">POSTS</a><a href="#">HARDWARE</a><a href="#">FIRMWARE</a><a href="#">CAD</a></nav>
+<main>
+<section>
+<div class="card"><div class="hd"><span><b>@servo_witch</b> · REP 4,182 · MEMBER SINCE 2022-03</span><span>POSTED 12 MIN AGO · EDITED NEVER</span></div>
+<div class="bd">
+<h2 style="font-size:18px">QDD cycloidal drive v3 — 41% backlash reduction, full CAD + BOM released</h2>
+<p style="margin:10px 0">This is revision three of the quasi-direct-drive actuator. Changes from v2 are listed exhaustively below — nothing is hidden, including the two changes that made things worse.</p>
+<div class="diagram">        ┌──────────────┐
+ MOTOR ─┤ 17:1 CYCLOID ├─ OUTPUT ── 38.2 Nm PEAK
+        └──────┬───────┘
+        ENCODER (14-bit, on output shaft)</div>
+<dl class="kv">
+<dt>PEAK TORQUE</dt><dd>38.2 Nm</dd>
+<dt>BACKLASH</dt><dd>0.04° (was 0.068°, −41%)</dd>
+<dt>MASS</dt><dd>412 g</dd>
+<dt>COST (QTY 1)</dt><dd>$61.20 — full BOM in repo</dd>
+<dt>CYCLES TESTED</dt><dd>2,100,000</dd>
+<dt>LICENSE</dt><dd>GPL-3.0</dd>
+</dl>
+<p style="margin:10px 0">Repo: <a href="#">orx.dev/servo_witch/qdd-v3</a> · STEP files, FreeCAD source, test firmware, raw test-rig CSVs (all 2.1M cycles).</p>
+<span class="tag">CAD</span><span class="tag">BOM</span><span class="tag">TESTED</span><span class="tag">GPL-3.0</span>
+</div>
+<div class="ft"><span>▲ 482 UPVOTE</span><span>FORK</span><span>DOWNLOAD .ZIP (48.2 MB)</span><span>REPORT</span></div></div>
+
+<h1>REPLIES — 61 [THREADED, OLDEST FIRST]</h1>
+<div class="card"><div class="hd"><span><b>@bldc_boris</b> · REP 11,204</span><span>9 MIN AGO · #1</span></div>
+<div class="bd"><p>Dowel pin substitution is clever. Did you measure efficiency delta? Hardened pins usually cost you 1–2% to friction.</p></div>
+<div class="ft"><span>▲ 88</span><span>REPLY</span><span>QUOTE</span></div></div>
+<div class="card" style="margin-left:24px"><div class="hd"><span><b>@servo_witch</b> · OP</span><span>6 MIN AGO · #2 → #1</span></div>
+<div class="bd"><p>Yes — 84.1% vs 85.3% in v2 at rated load. Worth it for the backlash. Full efficiency sweep is in /data/eff_sweep.csv.</p></div>
+<div class="ft"><span>▲ 61</span><span>REPLY</span><span>QUOTE</span></div></div>
+<div class="card"><div class="hd"><span><b>@wobbly_dog</b> · REP 302</span><span>2 MIN AGO · #3</span></div>
+<div class="bd"><p>Printing the carrier now. Will report cycle counts on PETG-CF since you only tested PA-CF. Adding my rig to the shared test matrix.</p></div>
+<div class="ft"><span>▲ 12</span><span>REPLY</span><span>QUOTE</span></div></div>
+</section>
+
+<aside>
+<div class="card"><div class="hd"><span>POST TELEMETRY</span></div><div class="bd">
+<dl class="kv"><dt>VIEWS</dt><dd>12,882</dd><dt>UNIQUE</dt><dd>9,140</dd><dt>FORKS</dt><dd>19</dd><dt>PRINTS LOGGED</dt><dd>204</dd><dt>CI STATUS</dt><dd>PASS ✓</dd></dl></div></div>
+<div class="card"><div class="hd"><span>REVISION HISTORY</span></div><div class="bd">
+<table><tr><th>REV</th><th>DATE</th></tr><tr><td>v3</td><td>2026-07-12</td></tr><tr><td>v2</td><td>2026-03-01</td></tr><tr><td>v1</td><td>2025-11-18</td></tr></table></div></div>
+</aside>
+</main>
+<footer><span>EVERY EDIT IS VERSIONED. EVERY VOTE IS AUDITABLE.</span><span>ORX POST RENDERER v1.9</span></footer>
+</body></html>

@@ -1,0 +1,38 @@
+/* DESIGN 2 — "DATASHEET" : printed engineering document, paper white + drafting red */
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#f4f1ea;color:#1a1a1a;font:13px/1.55 "Berkeley Mono","IBM Plex Mono",ui-monospace,monospace}
+a{color:#1a1a1a;text-decoration:underline}
+a:hover{background:#c8102e;color:#f4f1ea;text-decoration:none}
+.sheet{max-width:1180px;margin:14px auto;border:2px solid #1a1a1a;background:#fbf9f4}
+.titleblock{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;border-bottom:2px solid #1a1a1a}
+.titleblock div{border-right:1px solid #1a1a1a;padding:8px 12px}
+.titleblock div:last-child{border-right:0}
+.titleblock small{display:block;font-size:10px;color:#6b675e;letter-spacing:1px}
+.titleblock strong{font-size:15px}
+.red{color:#c8102e}
+nav{display:flex;border-bottom:2px solid #1a1a1a;flex-wrap:wrap}
+nav a{padding:7px 20px;border-right:1px solid #1a1a1a;text-decoration:none;letter-spacing:2px;font-size:12px}
+nav a.on{background:#1a1a1a;color:#fbf9f4}
+main{display:grid;grid-template-columns:1fr 300px}
+main.single{grid-template-columns:1fr}
+.col{padding:16px;border-right:1px solid #1a1a1a}
+aside{padding:16px;font-size:12px}
+h1{font-size:13px;letter-spacing:3px;border-bottom:1px solid #1a1a1a;padding-bottom:4px;margin-bottom:12px}
+h1 .sec{float:right;color:#c8102e}
+.item{border:1px solid #1a1a1a;margin-bottom:14px;background:#fff}
+.item .num{float:left;background:#1a1a1a;color:#fbf9f4;padding:2px 8px;font-size:11px;margin:10px 0 0 10px}
+.item .meta{font-size:10.5px;color:#6b675e;letter-spacing:.5px;padding:10px 12px 0 12px;overflow:hidden}
+.item h2{font-size:15px;padding:4px 12px 0;font-weight:bold}
+.item p{padding:6px 12px 10px;font-size:12.5px}
+.item .row{display:flex;border-top:1px solid #1a1a1a;font-size:11px;flex-wrap:wrap}
+.item .row span{padding:4px 10px;border-right:1px solid #ddd8cc}
+.stamp{display:inline-block;border:1.5px solid #c8102e;color:#c8102e;padding:0 6px;font-size:10px;letter-spacing:1px;transform:rotate(-1deg);margin-left:8px}
+table{width:100%;border-collapse:collapse;font-size:12px;background:#fff}
+td,th{border:1px solid #1a1a1a;padding:4px 8px;text-align:left;vertical-align:top}
+th{background:#e9e4d8;font-weight:bold;font-size:11px;letter-spacing:1px}
+.figure{border:1px solid #1a1a1a;background:#fff;padding:10px;white-space:pre;font-size:11px;color:#444;overflow-x:auto;margin:8px 0}
+.figure figcaption,.cap{font-size:10px;color:#6b675e;letter-spacing:1px;margin-top:6px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:2px 14px;font-size:12px;padding:2px 0}
+.kv dt{color:#6b675e}
+footer{border-top:2px solid #1a1a1a;padding:6px 12px;font-size:10px;letter-spacing:1px;color:#6b675e;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
+@media(max-width:900px){main{grid-template-columns:1fr}.col{border-right:0}.titleblock{grid-template-columns:1fr 1fr}}

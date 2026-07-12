@@ -1,0 +1,68 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ORX PANEL — POST 4F2A</title><link rel="stylesheet" href="style.css"></head><body>
+<header>
+<div class="logo">ORX<i>▮</i> /actuators / POST 4F2A</div>
+<div class="stat"><div><small>VIEWS</small>12,882</div><div><small>FORKS</small>19</div><div><small>PRINTS</small>204</div><div><small>CI</small>PASS</div></div>
+</header>
+<nav><a href="index.html">FEED</a><a href="forum.html">FORUM</a><a class="on" href="post.html">POSTS</a><a href="#">HARDWARE</a><a href="#">FIRMWARE</a><a href="#">CAD LIBRARY</a><a href="#">FAILURE DB</a></nav>
+<div class="grid">
+<aside>
+<div class="panel"><h3>AUTHOR</h3><div class="pd" style="font-size:11px">
+<b style="color:#4fd8eb">@servo_witch</b><br>rep 4,182 · since 2022-03<br>certified contributor<div class="bar"><i style="width:84%"></i></div>reproduction rate 84%</div></div>
+<div class="panel"><h3>REVISIONS</h3><ul class="plist">
+<li>v3 <span class="n">2026-07-12</span></li>
+<li>v2 <span class="n">2026-03-01</span></li>
+<li>v1 <span class="n">2025-11-18</span></li>
+</ul></div>
+<div class="panel"><h3>PACKAGE</h3><div class="pd" style="font-size:11px">48.2 MB zip<br>STEP · FCStd · firmware · raw CSV<br><a href="#">download →</a></div></div>
+</aside>
+
+<section>
+<div class="post"><div class="vote">▲<b>482</b>▼</div><div class="body">
+<h2>QDD cycloidal drive v3 — 41% backlash reduction, full CAD + BOM released</h2>
+<div class="meta">by <b>@servo_witch</b> · 12 min ago · rev 3 · checksum a91f…04 · GPL-3.0</div>
+<p>Third revision of the quasi-direct-drive actuator. Every change from v2 listed below, including the two that made things worse — concealing regressions gets you de-certified here.</p>
+<div class="pd" style="padding:10px 0">
+<table>
+<tr><th>PARAMETER</th><th>REV 2</th><th>REV 3</th><th>Δ</th></tr>
+<tr><td>Peak torque</td><td>37.9 Nm</td><td>38.2 Nm</td><td>+0.8%</td></tr>
+<tr><td>Backlash</td><td>0.068°</td><td>0.04°</td><td style="color:#4fd8eb">−41%</td></tr>
+<tr><td>Efficiency @ rated</td><td>85.3%</td><td>84.1%</td><td style="color:#ff8a00">−1.2 pt (accepted)</td></tr>
+<tr><td>Mass</td><td>398 g</td><td>412 g</td><td style="color:#ff8a00">+14 g (accepted)</td></tr>
+<tr><td>Endurance</td><td>1.4M cyc</td><td>2.1M cyc</td><td style="color:#4fd8eb">+50%</td></tr>
+</table></div>
+<div class="chips"><span class="chip hot">TESTED</span><span class="chip">CAD</span><span class="chip">BOM</span><span class="chip">GPL-3.0</span></div>
+<div class="actions"><span>upvote</span><span>fork</span><span>log a reproduction</span><span>report</span></div></div></div>
+
+<div class="panel"><h3>REPLIES <em>61 · THREADED, OLDEST FIRST</em></h3></div>
+
+<div class="post"><div class="vote">▲<b>88</b>▼</div><div class="body">
+<div class="meta"><b>@bldc_boris</b> · rep 11,204 · 9 min ago · #1</div>
+<p>Dowel pin substitution is clever. Did you measure efficiency delta? Hardened pins usually cost you 1–2% to friction.</p>
+<div class="actions"><span>reply</span><span>quote</span></div></div></div>
+
+<div class="post" style="margin-left:28px"><div class="vote">▲<b>61</b>▼</div><div class="body">
+<div class="meta"><b>@servo_witch</b> · OP · 6 min ago · #2 → #1</div>
+<p>Yes — 84.1% vs 85.3% at rated load. Worth it for the backlash. Full sweep in /data/eff_sweep.csv.</p>
+<div class="actions"><span>reply</span><span>quote</span></div></div></div>
+
+<div class="post"><div class="vote">▲<b>12</b>▼</div><div class="body">
+<div class="meta"><b>@wobbly_dog</b> · rep 302 · 2 min ago · #3</div>
+<p>Printing the carrier now. Will report cycle counts on PETG-CF since you only tested PA-CF. Adding my rig to the shared test matrix.</p>
+<div class="actions"><span>reply</span><span>quote</span></div></div></div>
+</section>
+
+<aside>
+<div class="panel"><h3>POST TELEMETRY</h3><div class="pd">
+<span class="big">12,882</span> views<div class="bar"><i style="width:78%"></i></div>
+<span class="big">204</span> reproductions<div class="bar o"><i style="width:41%"></i></div>
+<span style="font-size:11px;color:#8b959e">unique 9,140 · mirrors 6</span></div></div>
+<div class="panel"><h3>RELATED</h3><ul class="plist">
+<li><a href="#">qdd-v2 archive</a></li>
+<li><a href="#">cycloid math thread</a></li>
+<li><a href="#">FOC textbook thread</a></li>
+</ul></div>
+</aside>
+</div>
+<footer><span>every edit versioned · every vote auditable</span><span>ORX PANEL v3</span></footer>
+</body></html>
